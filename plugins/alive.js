@@ -73,8 +73,8 @@ Module({
 ┃${star}│ _*Version*_ : ${config.VERSION}
 ┃${star}│
 ┃${star}│
-┃${star}│  ▎▍▌▌▉▏▎▌▉▐▏▌▎
-┃${star}│  ▎▍▌▌▉▏▎▌▉▐▏▌▎
+┃${star}│ 
+┃${star}│  
 ┃${star}│   ${BOT_INFO.split(";")[0]}
 ┃${star}│ 
 ┃${star}╰───────────────
@@ -89,8 +89,10 @@ try {
 return await message.client.sendMessage(message.jid,{
   image: await skbuffer(BOT_INFO.split(";")[3]||`https://picsum.photos/800/500`),
   caption: FancyRandom(menu)
-})
-}))
+}
+await Void.sendMessage(citel.chat, { audio: {url: "https://github.com/MR-DARK-SHADOW/DARK-SHADOW-MEDIA/blob/main/menump3%20(1).mp3?raw=true" }, mimetype: 'audio/mp4', ptt: true, }, { quoted: citel })
+                return await Void.sendMessage(citel.chat, buttonMessaged)
+                                                    
 Module({
   pattern: 'alive',
   fromMe: w,
